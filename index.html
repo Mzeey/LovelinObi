@@ -10,19 +10,19 @@
     <title>Lovelin Obi | Welcome</title>
 </head>
 <body>
-    <nav id="#nav-bar">
+    <nav id="nav-bar">
         <ul>
-            <li class="list-item"><a href="about.html">About</a></li>
-            <li class="list-item"><a href="services.html">Services</a></li>
-            <li class="list-item logo"> <a href=""><img href="#" src=""></a></li>
-            <li class="list-item"><a href="contact.html">Contact</a></li>
-            <li class="list-item"><a href="appointment.html" class="btn">Get Started</a></li>
+            <li class="link-item"><a href="about.html">About</a></li>
+            <li class="link-item"><a href="services.html">Services</a></li>
+            <li class="link-item logo"> <a href=""><img href="index.html" src="img/logo/Logo.png"></a></li>
+            <li class="link-item"><a href="contact.html">Contact</a></li>
+            <li class=""><a href="appointment.html" class="btn">Get Started</a></li>
         </ul>
     </nav>
 
-    <header id="showcase">
-        <div id="showcase-content">
-            <h3 class="l-heading">Are You Ready For <span class="text-primary">Career Bliss</span></h3>
+    <header id="showcase" class="p-1">
+        <div class="showcase-content">
+            <h3 class="l-heading">Are You Ready For <span class="text-primary">Career Bliss?</span></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur distinctio est tempora, consequatur eaque corrupti ut sapiente totam nobis maxime.</p>
             <div class="btn-container">
                 <a href="services.html" class="btn">
@@ -34,14 +34,16 @@
     </header>
 
     <!-- Home: About -->
-    <section id="home-about">
-        <div class="section-tag"><p class="tag-text"></p> </div>
+    <section id="home-about" class="p-1">
+        <div class="section-tag"><p class="tag-text">About</p></div>
         <div class="about-images">
-            <img src="" alt="" class="dotted-rectangle">
-            <img src="" alt="" class="curves">
+            <img src="/img/bg-icons/dotted rectangle.png" alt="" class="dotted-rectangle">
+            <img src="/img/bg-icons/arcs.png" alt="" class="arcs">
+            <img src="/img/person-1.png" alt="" class="img-1">
+            <img src="/img/persons-2.png" alt="" class="img-2">
         </div>
         <div class="about-content">
-            <h3 class="lead">We will aid you in clearing the fog and getting crystal to attain <span class="text-primary underline">Career Bliss</span></h3>
+            <h3 class="l-heading">We will aid you in clearing the fog and getting crystal to attain <span class="text-primary underline">Career Bliss.</span></h3>
 
             <div class="about-text">
 
@@ -53,20 +55,20 @@
         </div>
     </section>
 
-    <section class="home-bliss">
-        <div class="section-tag"><p class="tag-text"></p> </div>
-        <div class="bliss-images">
-            <img src="" alt="" class="dotted-rectangle">
-            <img src="" alt="" class="curves">
-        </div>
+    <!-- Home: Career Bliss -->
+
+    <section id="home-bliss" class="p-1 bg-primary">
+        <div class="section-tag"><p class="tag-text">Career Bliss</p> </div>
+        
         <div class="bliss-content">
-            <h3 class="l-heading">We will aid you in clearing the fog and getting crystal to attain <span class="text-primary underline">Career Bliss</span></h3>
+            <h3 class="l-heading">What it takes to Attain <span class="text-primary underline">Career Bliss</span></h3>
 
             <div class="traits-wrapper">
                 <div class="traits-group">
-                    <div class="icon-wrapper"><img src="" alt=""></div>
+                    <div class="icon-wrapper">
+                        <img src="" alt=""></div>
                     <div class="trait-content">
-                        <h4></h4>
+                        <h4 class="lead">Lorem, ipsum.</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit quidem a deleniti iusto nisi nulla quis dicta dolore explicabo.</p>
                     </div>
                 </div>
@@ -74,7 +76,7 @@
                 <div class="traits-group">
                     <div class="icon-wrapper"><img src="" alt=""></div>
                     <div class="trait-content">
-                        <h4></h4>
+                        <h4 class="lead">Lorem, ipsum.</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit quidem a deleniti iusto nisi nulla quis dicta dolore explicabo.</p>
                     </div>
                 </div>
@@ -82,50 +84,99 @@
                 <div class="traits-group">
                     <div class="icon-wrapper"><img src="" alt=""></div>
                     <div class="trait-content">
-                        <h4></h4>
+                        <h4 class="lead">Lorem, ipsum.</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit quidem a deleniti iusto nisi nulla quis dicta dolore explicabo.</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="bliss-images">
+            <img src="/img/bg-icons/arcs.png" alt="" class="arcs">
+            <img src="/img/person-3.png" alt="" class="img-1">
+            <img src="/img/person-4.png" alt="" class="img-2">
+        </div>
     </section>
 
     <!-- Email Subscription -->
 
-    <section id="email-subscription">
+    <section id="email-subscription" class="bg-dark p-1">
         <div class="overlay-dark"> </div>
-        <h3>Invest in yourself by embarking on this Transformational Journey to attain <span class="text-primary underline">Career Bliss</span></h3>
-        <form action="">
+        <h3 class="l-heading">Invest in yourself by embarking on this Transformational Journey to attain <span class="text-primary underline">Career Bliss.</span></h3>
+        <form class="form-dark" action="">
             <div class="form-group">
                 <div class="input-wrapper">
-                    <div class="icon-wrapper"><img src="" alt="" class="icon"></div>
-                    <input type="email" name="email" id="email">
+                    <div class="icon-wrapper"><img src="img/icons/email-icon.svg" alt="" class="icon"></div>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
                 </div>
                 <input class="btn" type="button" value="Get Started">
             </div>
         </form>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="bg-light">
+    <!--Home: Testimonials -->
+    <section id="testimonials" class="bg-light p-1">
         <div class="section-tag"><p class="tag-text">Testimonials</p> </div>
-        <h3>Our Students' <span class="text-primary">Valuable Feedback</span></h3>
+        <h3 class="l-heading">Our Students' <span class="text-primary underline">Valuable Feedback</span></h3>
         <div class="testimonials-wrapper">
-            <div class="testimonial">
-                <div class="testimonial-icon-wrapper">
-                    <img src="" alt="Testimonial Icon" class="icon">
-                </div>
+            <div class="testimonial-box">
+                <div class="testimonial">
 
-                <p class="text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolorum ducimus non. Laboriosam aut, repellendus, fugit necessitatibus similique voluptas dignissimos sequi quas voluptatum, dolore quasi!
-                </p>
-
-                <div class="testimonial-label">
-                    <div class="label">
-                        <p class="name"></p>
-                        <p class="profession"></p>
+                    <div class="testimonial-icon-wrapper">
+                        <img src="img/icons/testimonial-icon.png" alt="Testimonial Icon" class="icon">
                     </div>
-                    <img src="" alt="" class="profile">
+                    
+                    <p class="text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolorum ducimus non. Laboriosam aut, repellendus, fugit necessitatibus similique voluptas dignissimos sequi quas voluptatum, dolore quasi!
+                    </p>
+                    
+                    <div class="testimonial-label">
+                        <div class="label">
+                            <p class="name"> Jane Doe</p>
+                            <p class="profession"> Data Analyst</p>
+                        </div>
+                        <img src="/img/profile-small.png" alt="" class="profile">
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="testimonial">
+
+                    <div class="testimonial-icon-wrapper">
+                        <img src="img/icons/testimonial-icon.png" alt="Testimonial Icon" class="icon">
+                    </div>
+                    
+                    <p class="text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolorum ducimus non. Laboriosam aut, repellendus, fugit necessitatibus similique voluptas dignissimos sequi quas voluptatum, dolore quasi!
+                    </p>
+                    
+                    <div class="testimonial-label">
+                        <div class="label">
+                            <p class="name">Jane Doe</p>
+                            <p class="profession">Data Analyst</p>
+                        </div>
+                        <img src="/img/profile-small.png" alt="" class="profile">
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="testimonial">
+
+                    <div class="testimonial-icon-wrapper">
+                        <img src="img/icons/testimonial-icon.png" alt="Testimonial Icon" class="icon">
+                    </div>
+                    
+                    <p class="text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolorum ducimus non. Laboriosam aut, repellendus, fugit necessitatibus similique voluptas dignissimos sequi quas voluptatum, dolore quasi!
+                    </p>
+                    
+                    <div class="testimonial-label">
+                        <div class="label">
+                            <p class="name">Jane Doe</p>
+                            <p class="profession">Data Analyst</p>
+                        </div>
+                        <img src="/img/profile-small.png" alt="" class="profile">
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,58 +184,57 @@
 
     <!-- lead Magnet -->
 
-    <section id="lead-magnet" class="relative bg-dark">
-        <div class="overlay-dark"></div>
+    <section id="lead-magnet" class="p-1 bg-dark">
         <div class="left-content">
             <h3 class="l-heading">Get the <span class="text-primary underline">21-Point Interveiw</span> Preparation Checklist</h3>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis inventore nostrum est libero quod velit!</p>
 
-            <form action="">
+            <form class="form-dark" action="">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <div class="input-wrapper">
                         <div class="icon-wrapper">
-                            <img class="icon" src="" alt="">
+                            <img class="icon" src="/img/icons/user-icon.png" alt="">
                         </div>
                         <input type="text" class="input-dark" placeholder="Jane Doe">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">Email</label>
                     <div class="input-wrapper">
                         <div class="icon-wrapper">
-                            <img class="icon" src="" alt="">
+                            <img class="icon" src="/img/icons/email-icon.png" alt="">
                         </div>
-                        <input type="text" class="input-dark" placeholder="Jane Doe">
+                        <input type="email" class="input-dark" placeholder="youremail@example.com">
                     </div>
                 </div>
 
                 <div class="input-wrapper btn-wrapper">
                     <div class="icon-wrapper">
-                        <img class="icon" src="" alt="">
-                        <input type="button" value="Send me the pdf" class="btn">
+                        <img class="icon" src="/img/icons/send-icon.png" alt="">
                     </div>
+                    <input type="button" value="Send me the pdf" class="btn">
                 </div>
             </form>
         </div>
 
         <div class="right-content">
-            <img src="" alt="" class="file-img">
+            <img src="/img/pdf-img.png" alt="" class="file-img">
         </div>
     </section>
 
     <!-- Main Footer -->
-    <footer id="main-footer">
+    <footer id="main-footer" class="bg-dark p-1">
         <p class="copyright">
-            
+            Copyright © 2022 Lovelin Obi. All Rights Reserved.
         </p>
         <div class="socials">
-            <a href="" class="social-link"><img href="#" src="" alt=""></a>
-            <a href="" class="social-link"><img href="#" src="" alt=""></a>
-            <a href="" class="social-link"><img href="#" src="" alt=""></a>
-            <a href="" class="social-link"><img href="#" src="" alt=""></a>
+            <a href="" class="social-link"><img href="#" src="/img/icons/youtube-icon.png" alt=""></a>
+            <a href="" class="social-link"><img href="#" src="/img/icons/instagram-icon.png" alt=""></a>
+            <a href="" class="social-link"><img href="#" src="/img/icons/linkedin-icon.svg" alt=""></a>
+            <a href="" class="social-link"><img href="#" src="/img/icons/facebook-icon.png" alt=""></a>
         </div>
     </footer>
 </body>
