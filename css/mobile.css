@@ -1,0 +1,14 @@
+:root{}
+
+.l-heading{
+    font-size: 2.8rem;
+}
+
+#home-about .about-images,
+#home-bliss .bliss-images{
+    transform: scale(0.6);
+}
+
+#lead-magnet .left-content form{
+    width: 100%;
+}

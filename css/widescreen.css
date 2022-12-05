@@ -1,0 +1,68 @@
+/* Variables */
+:root{
+    --font-size-regular: 1.5em;
+}
+
+
+.section-tag::after{
+    top: -6px;
+}
+
+#home-about .section-tag::after{
+    top:-5px;
+}
+
+/* Navigation Bar */
+
+#nav-bar ul{
+    justify-content: center;
+}
+
+#nav-bar ul li{
+    display: none;
+}
+
+#nav-bar ul li.logo{
+    display: inline;
+    margin-left: auto;
+}
+
+#nav-bar ul li.hamburger-wrapper{
+    display: block;
+}
+
+
+/* Showcase */
+#showcase .showcase-content{
+    width: 100%;
+}
+
+
+/* Testimfonials */
+
+#testimonials .testimonials-wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+#testimonials .testimonials-wrapper .testimonial-box{
+    max-width: 300px;
+    min-height: 300px;
+    
+}
+
+#testimonials .testimonials-wrapper .testimonial-box{
+    margin: 2.5% 0;
+}
+
+@media(max-width: 750px){
+    #main-footer{
+        flex-direction: column;
+    }
+
+
+    #main-footer .socials{
+        margin-top: 2%;
+    }
+}
