@@ -744,6 +744,13 @@ p{
 
  }
 
+ @media (max-width: 900px) and (orientation:landscape) {
+    #showcase,
+    #showcase .showcase-content::after{
+        height: calc(180vh - var(--nav-bar-height));
+    }
+}
+
 
 
 

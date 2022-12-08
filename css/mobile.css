@@ -4,11 +4,92 @@
     font-size: 2.8rem;
 }
 
+.btn{
+    font-size: 1.5rem;
+}
+
 #home-about .about-images,
 #home-bliss .bliss-images{
     transform: scale(0.6);
 }
 
+#home-bliss .bliss-images{
+    position: relative;
+    right: -20%;
+}
+
+#lead-magnet,
+#email-subscription,
+#home-about,
+#home-bliss,
+#testimonials{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
 #lead-magnet .left-content form{
     width: 100%;
 }
+
+.form-dark .form-group .input-wrapper{
+    min-width: 100%;
+}
+
+.form-dark .form-group .input-wrapper .icon-wrapper{
+    width: 20%;
+}
+
+.form-dark .form-group .input-wrapper .icon-wrapper .icon,
+.form-dark .input-wrapper.btn-wrapper .icon-wrapper .icon{
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 480px) {
+    .lead{
+        font-size: 1.8rem;
+    }
+
+    #showcase .showcase-content::after{
+        width: 100%;
+    }
+
+    #home-about .about-images,
+    #home-bliss .bliss-images{
+        display: none;
+    }
+
+    #showcase{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    #showcase .showcase-content .btn-container{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #home-about .about-content .about-text p,
+    #home-about .about-content .about-text{
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    #home-bliss .bliss-content .traits-wrapper .icon-wrapper{
+        width: 35px;
+        height: 35px;
+        left: -50px;
+    }
+
+    #home-bliss .bliss-content .traits-wrapper{
+        margin-left: 5rem;
+    }
+
+    #lead-magnet .right-content img{
+        width: auto;
+        max-height: 300px;
+    }
+
+    
+}
+
