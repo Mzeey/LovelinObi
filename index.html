@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav id="nav-bar">
-        <ul>
+        <ul class="main-nav">
             <li class="link-item"><a href="about.html">About</a></li>
             <li class="link-item"><a href="services.html">Services</a></li>
             <li class="link-item logo"> <a href=""><img href="index.html" src="img/logo/Logo.png"></a></li>
@@ -20,6 +20,13 @@
             <li class="hamburger-wrapper">
                 <div class="hamburger"></div>
             </li>
+        </ul>
+        <div class="dark-overlay"></div>
+        <ul class="drop-down-nav">
+            <li class="link-item"><a href="about.html">About</a></li>
+            <li class="link-item"><a href="services.html">Services</a></li>
+            <li class="link-item"><a href="contact.html">Contact</a></li>
+            <li class=""><a href="appointment.html" class="btn">Get Started</a></li>
         </ul>
     </nav>
 
@@ -109,7 +116,8 @@
         <form class="form-dark" action="">
             <div class="form-group">
                 <div class="input-wrapper">
-                    <div class="icon-wrapper"><img src="img/icons/email-icon.svg" alt="" class="icon"></div>
+                    <div class="icon-wrapper">
+                        <img src="img/icons/email-icon.svg" alt="" class="icon"></div>
                     <input type="email" name="email" id="email" placeholder="Enter your email">
                 </div>
                 <input class="btn" type="button" value="Get Started">
@@ -240,5 +248,6 @@
             <a href="" class="social-link"><img href="#" src="/img/icons/facebook-icon.png" alt=""></a>
         </div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

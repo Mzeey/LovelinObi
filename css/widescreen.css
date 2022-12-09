@@ -14,20 +14,20 @@
 
 /* Navigation Bar */
 
-#nav-bar ul{
+#nav-bar ul.main-nav{
     justify-content: center;
 }
 
-#nav-bar ul li{
+#nav-bar ul.main-nav li{
     display: none;
 }
 
-#nav-bar ul li.logo{
+#nav-bar ul.main-nav li.logo{
     display: inline;
     margin-left: auto;
 }
 
-#nav-bar ul li.hamburger-wrapper{
+#nav-bar ul.main-nav li.hamburger-wrapper{
     display: block;
 }
 
@@ -35,6 +35,13 @@
 /* Showcase */
 #showcase .showcase-content{
     width: 100%;
+}
+
+#nav-bar.expanded div.dark-overlay,
+#nav-bar.expanded ul.drop-down-nav{
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
 }
 
 
@@ -59,6 +66,9 @@
 @media(max-width: 750px){
     #main-footer{
         flex-direction: column;
+    }
+    #main-footer .copyright{
+        text-align: center;
     }
 
 

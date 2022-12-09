@@ -46,6 +46,10 @@
 }
 
 @media (max-width: 480px) {
+    #nav-bar{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
     .lead{
         font-size: 1.8rem;
     }
@@ -90,6 +94,13 @@
         max-height: 300px;
     }
 
-    
+    #main-footer .copyright{
+        margin-bottom: 2rem;
+    }
+
+    #main-footer .socials{
+        
+    }
+
 }
 

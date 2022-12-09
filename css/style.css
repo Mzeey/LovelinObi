@@ -136,9 +136,13 @@ p{
 #nav-bar{
     align-items: center;
     width: 100%;
-    height: var(--nav-bar-height);
+    min-height: var(--nav-bar-height);
     background-color: var(--white-color);
     padding: 1.6rem 5rem;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.2);
 }
 
 #nav-bar ul{
@@ -159,9 +163,25 @@ p{
     color: var(--white-color);
 }
 
-#nav-bar .link-item a:hover{
+#nav-bar .link-item a:hover,
+#nav-bar .link-item.current a{
+    position: relative;
     color: var(--primary-color);
 }
+
+#nav-bar .link-item.current a::before{
+    content: '';
+    width: 18px;
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
 
 #nav-bar ul li.hamburger-wrapper{
     display: none;
@@ -182,6 +202,7 @@ p{
 
 #nav-bar ul .hamburger-wrapper .hamburger{
     position: relative;
+    transition: all 300ms ease-in-out;
 }
 
 #nav-bar ul .hamburger-wrapper .hamburger::after,
@@ -208,6 +229,67 @@ p{
     width: 3.3rem;
 }
 
+/* dropdown nav bar styles */
+#nav-bar ul.drop-down-nav{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 10px;
+    border-top: 1px dotted var(--secondary-color);
+    padding-top: 1.5rem;
+    transition: max-height 500ms ease-in;
+    overflow: hidden;
+    background: var(--white-color);
+    padding-bottom: 2rem;
+    transition: all 500ms ease-in-out;
+}
+
+#nav-bar div.dark-overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000070;
+    margin-top: 1rem;
+    transition: 800ms all ease-in-out;
+}
+
+#nav-bar div.dark-overlay,
+#nav-bar ul.drop-down-nav{
+    position: absolute;
+    left: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+#nav-bar ul.drop-down-nav li{
+    display: block;
+    width: 100%;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-bar.expanded ul .hamburger-wrapper .hamburger{
+    transform: rotate(45deg);
+    width: 33px;
+}
+
+#nav-bar.expanded ul .hamburger-wrapper .hamburger::after{
+    transform: rotate(-90deg);
+    bottom: 0;
+}
+
+#nav-bar.expanded ul .hamburger-wrapper .hamburger::before{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
 /* Home: showcase */
 
 #showcase{
@@ -217,6 +299,7 @@ p{
     position: relative;
     display: flex;
     align-items: center;
+    margin-top: var(--nav-bar-height);
 }
 
 
@@ -617,7 +700,7 @@ p{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url(/img/lead-magnet-img.png);
+    background: url(/img/lead-magnet-img.png) no-repeat center center/cover;
     left: 0;
     top: 0;
 }
