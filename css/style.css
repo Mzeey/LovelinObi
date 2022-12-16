@@ -34,7 +34,7 @@ body{
 }
 
 p{
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -109,6 +109,7 @@ p{
     padding: 1.1rem 3.6rem;
     color: var(--white-color);
     background: var(--btn-color);
+    display: inline-block;
     border: none;
     cursor: pointer;
     text-align: center;
@@ -341,7 +342,8 @@ p{
     padding-bottom: 11rem;
 }
 
-#home-about .section-tag{
+#home-about .section-tag,
+#about-about .section-tag{
     position: absolute;
     right: 5rem;
     margin-top: 5rem;
@@ -357,39 +359,53 @@ p{
     position: relative;
 }
 
-#home-about .about-images .dotted-rectangle,
-#home-about .about-images .arcs{
+.image-display.about-images .dotted-rectangle,
+.image-display.about-images .arcs{
     position: absolute;
     z-index: -1;
     left: 0;
 }
 
-#home-about .about-images .dotted-rectangle{
+.image-display.about-images .dotted-rectangle{
     top: -3rem;
     left: -3rem;
 }
 
-#home-about .about-images .arcs{
+.image-display.about-images .arcs{
     bottom: -12rem;
     left: -8rem;
 }
-#home-about .about-images{
+/* @ rounded */
+.image-display.about-images.rounded .arcs{
+    bottom: -5rem;
+}
+
+.image-display.about-images{
     padding-left: 20px;
 }
 
-#home-about .about-images .img-1{
+.image-display.about-images .img-1{
     border-radius: 10px;
     width: 384px;
     height: 528px;
     transform: scale(0.9);
 }
 
-#home-about .about-images .img-2{
+.image-display.about-images .img-2{
     margin-left: 20rem;
     margin-top: -20rem;
     width: 488px;
     height: 297px;
     transform: scale(0.9);
+}
+
+.image-display.about-images.rounded .img-2{
+    width: 175px;
+    height: 175px;
+}
+
+.image-display.about-images.rounded .img-2{
+    margin-left: 25rem;
 }
 
 #home-about .about-content{
@@ -406,10 +422,6 @@ p{
 
 #home-about .about-content .about-text p{
     margin-bottom: 2rem;
-}
-
-#home-about .about-content .about-text a{
-    margin-top: 2rem;
 }
 
 
@@ -733,6 +745,156 @@ p{
 #lead-magnet .right-content img{
     width: 350px;
     height: 450px;
+}
+
+/* About: About Seciton Styles */
+#about-about{
+    position: relative;
+    display: flex;
+}
+
+#about-about .about-images,
+#about-about .about-content{
+    flex: 1;
+    margin-top: 6rem;
+}
+
+#about-about .about-images{
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+#about-about .about-content{
+    margin-top: 15rem;
+}
+#about-about .about-content h3{
+    margin-bottom: 2rem;
+}
+
+#about-about .about-content .about-text p{
+    margin-bottom: 2rem;
+}
+
+
+/* About: MyIntent Styles */
+#about-myintent{
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center
+}
+
+#about-myintent .section-tag{
+    margin-bottom: 2.4rem;
+}
+
+#about-myintent::before,
+#about-myintent::after{
+    content: '';
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 10rem solid var(--white-color);
+    position: absolute;
+    z-index: 0;
+}
+
+#about-myintent::before{
+    left: -20rem;
+    bottom: -20rem;
+}
+
+#about-myintent::after{
+    right: -20rem;
+    top: -20rem;
+    z-index: 0;
+}
+#about-myintent .myintent-content,
+#about-myintent .section-tag{
+    z-index: 2;
+}
+
+#about-myintent .myintent-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-myintent .myintent-content .top{
+    display: flex;
+    gap: 3rem;
+}
+
+#about-myintent .myintent-content h3{
+    margin-top: 5rem;
+    margin-bottom: 2.4rem;
+}
+
+#about-myintent .myintent-content .bottom{
+    display: flex;
+    gap: 4rem;
+}
+
+.box{
+    background-color: var(--white-color);
+    padding: 2rem 4rem;
+    position: relative;
+    min-height: 16.4rem;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+}
+.box::before{
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 0.7rem;
+    background-color: var(--secondary-color);
+    left: 0;
+    top: 0;
+}
+
+.box::after{
+    content: '';
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    background-color: var(--secondary-color);
+    right: 0;
+    bottom: 0;
+}
+
+.core-value-box{
+    min-height: 400px;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    padding-top: 5rem;
+}
+
+.core-value-box::after{
+    display: none;
+}
+.core-value-box h4{
+    margin-bottom: 2rem;
+}
+
+.core-value-box .value{
+    margin-bottom: 5rem;
+}
+.core-value-box .img-wrapper{
+    background-color: var(--secondary-color);
+    width: 130px;
+    height: 130px;
+    margin-bottom: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Main Footer Styles */
